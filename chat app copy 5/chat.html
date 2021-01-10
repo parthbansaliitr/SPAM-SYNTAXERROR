@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments to Cherish - Chat Room</title>
+    <script defer src="http://localhost:5000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <nav id="nav" class="nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#topics">Topics</a></li>
+                <li><a href="/files/about.html">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+
+
+
+            </ul>
+        </nav>
+
+    </div>
+    <div class="h2">
+        <h2>Welcome to Moments to Cherish Chat Room</h2>
+    </div>
+    <div class="container"></div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+    <div class="ft">
+        <footer>
+            <h1>
+                Contact Us
+            </h1>
+            <span class="contact" id="contact">
+
+                Write your queries or suggestions to: <br>
+                <img class="mail" src="/partials/mail.png" alt="mail"> this@this.com<br>
+                <img class="mail" src="/partials/mail.png" alt="mail"> that@that.com
+
+            </span>
+            <span class="contact2">
+                Follow us on: <br>
+                <a class="social_1" href="https://www.facebook.com"><img class="social_1" src="/partials/social_1.jpg"
+                        alt="Facebook"></a>
+                <a class="social_1" href="https://www.facebook,com"><img class="social_1" src="/partials/social_1.jpg"
+                        alt="Facebook"></a>
+
+            </span>
+        </footer>
+    </div>
+    <script>
+
+        window.onscroll = function () { myFunction() };
+
+
+        var navbar = document.getElementById("nav");
+
+
+        var sticky = navbar.offsetTop;
+
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.nav{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    overflow: hidden;
+    display: block;
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.sticky + .container {
+    padding-top: 60px;
+  }
+.nav li{
+   
+    float: left;
+    list-style: none;
+    padding: 6px;
+    margin: 6px;
+}
+a{
+    color: white;
+    background-color: black;
+    padding: 4px 12px;
+    border: 2px solid black;
+    border-radius: 21px;
+    margin: -2px 2px;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: rgb(2 167 16);
+}
+
+
+.bgimg{
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    height:1700px;
+    opacity: 0.30;
+    z-index: -1;
+}
+.motto{
+    position: absolute;
+    top: 96px;
+    left: 93px;
+    
+}
+.motto .m1{
+    font-size: 120px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(2 167 16);
+}
+.motto .m2{
+    font-size: 120px;
+    font-family: 'Bree Serif', serif;
+}
+.motto .m3{
+    font-size: 120px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(2 167 16);
+}
+.qt{
+    position: absolute;
+    top: 311px;
+    right: 250px;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;;
+}
+.qt1{
+    
+    
+    position: absolute;
+    top: 461px;
+    right: 266px;
+    font-size: 23px;  
+}
+.content{
+    position: absolute;
+    top: 700px;
+}
+.hd{
+    text-align: center;
+
+}
+.cards {
+    margin-left: 256px;
+    margin-right: 256px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-auto-rows: auto;
+    gap: 47px;
+    font-family: sans-serif;
+    padding-top: 30px;
+}
+
+
+
+.card__image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+   
+}
+
+.card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+    
+}
+
+.card__content > p:first-of-type {
+    margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.card__info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    background: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__info i {
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+
+.card__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.card__link:hover {
+    color: white;
+    background-color: rgb(2 167 16);
+    border: 2px solid rgb(2 167 16);
+}
+
+.ft{
+    height: 180px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.ft .contact{
+    position: absolute;
+    left: 195px;
+}
+
+
+.ft .mail{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+
+}
+.ft .contact2{
+    position: absolute;
+    right: 195px;
+}
+.ft .social_1{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    padding: 3px;
+}

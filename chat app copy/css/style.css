@@ -1,0 +1,160 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(to left, rgb(135, 255, 135), rgb(255, 213, 135));
+}
+
+.nav{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    overflow: hidden;
+    display: block;
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.sticky + .container {
+    padding-top: 60px;
+  }
+.nav li{
+   
+    float: left;
+    list-style: none;
+    padding: 6px;
+    margin: 6px;
+}
+a{
+    color: white;
+    background-color: black;
+    padding: 4px 12px;
+    border: 2px solid black;
+    border-radius: 21px;
+    margin: -2px 2px;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: rgb(2 167 16);
+}
+
+
+
+
+h2{
+    margin-top: 45px;
+    font-size: 30px;
+    
+    text-align: center;
+    color: rgb(2 167 16);
+}
+.container{
+    max-width: 955px;
+    border: 2px solid black;
+    border-radius: 13px;
+    margin: 28px 277px;
+    height: 75vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 11px;
+}
+
+
+.message{
+    color: white;
+   
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.left{
+    float: left;
+    clear:both;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+
+.right{
+    border: 2px solid rgb(2 167 16);
+    background-color: rgb(2 167 16);
+    float: right;
+    clear:both;
+}
+
+#send-container{
+    display:block;
+    margin: auto;
+    text-align: center;
+    max-width: 1085px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#messageInp{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 34px;
+    font-size: 17px;
+    margin-bottom: 25px;
+    outline: none;
+    padding: 5px 12px;
+}
+
+.btn{
+    color: white;
+    background-color: black;
+    margin: 0 5px;
+    width: 9%;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 34px;
+    margin-bottom: 25px;
+}
+.btn:hover{
+    color: white;
+    border: 2px solid rgb(2 167 16);
+    background-color: rgb(2 167 16);
+}
+.ft{
+    height: 180px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.ft .contact{
+    position: absolute;
+    left: 195px;
+}
+
+
+.ft .mail{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+
+}
+.ft .contact2{
+    position: absolute;
+    right: 195px;
+}
+.ft .social_1{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    padding: 3px;
+}

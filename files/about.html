@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .container{
+        background-image: url(../partials/emotions.jpg);
+        
+    }
+
+    .nav {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        overflow: hidden;
+        display: block;
+
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .sticky+.container {
+        padding-top: 60px;
+    }
+
+    .nav li {
+
+        float: left;
+        list-style: none;
+        padding: 6px;
+        margin: 6px;
+    }
+
+    a {
+        color: white;
+        background-color: black;
+        padding: 4px 12px;
+        border: 2px solid black;
+        border-radius: 21px;
+        margin: -2px 2px;
+        text-decoration: none;
+    }
+
+    .nav a:hover {
+        background-color: rgb(2 167 16);
+    }
+
+    .box{
+        background-color: white;
+        width: 1200px;
+        height: 700px;
+        border: 2px solid white;
+        border-radius: 18px;
+        margin: 140px;
+        padding: 50px;
+    }
+    h1{
+        color: rgb(2 167 16);
+    }
+
+     
+    .ft {
+        height: 180px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    .ft .contact {
+        position: absolute;
+        left: 195px;
+    }
+
+
+    .ft .mail {
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+
+    }
+
+    .ft .contact2 {
+        position: absolute;
+        right: 195px;
+    }
+
+    .ft .social_1 {
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+        padding: 3px;
+    }
+   
+</style>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <nav id="nav" class="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#topics">Topics</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    
+                   
+
+                </ul>
+            </nav>
+
+        </div>
+            <div class="box">
+                <h1>About Us</h1><br><br>
+                This website connects you to a stranger or group of strangers, whom with you can chat and share your emotions, feelings, happy or sad moments of your life or just have a random chit-chat. The other person may not know you but can have a great bond with you sometimes due to same situations, and he/she being in the same situation understands you and can have a good discussion with you. You can chat with username of your choice without revealing your identity.
+            </div>
+            <div class="ft">
+                <footer>
+                    <h1>
+                        Contact Us
+                    </h1>
+                    <span class="contact" id="contact">
+                        
+                        Write your queries or suggestions to: <br>
+                        <img class="mail" src="/partials/mail.png" alt="mail"> this@this.com<br>
+                        <img class="mail" src="/partials/mail.png" alt="mail"> that@that.com
+
+                    </span>
+                    <span class="contact2">
+                        Follow us on: <br>
+                        <a class="social_1" href="https://www.facebook.com"><img class="social_1"
+                                src="/partials/social_1.jpg" alt="Facebook"></a>
+                        <a class="social_1" href="https://www.facebook,com"><img
+                                class="social_1" src="/partials/social_1.jpg" alt="Facebook"></a>
+
+                    </span>
+                </footer>
+            </div>
+    </div>
+    <script>
+
+        window.onscroll = function () { myFunction() };
+
+
+        var navbar = document.getElementById("nav");
+
+
+        var sticky = navbar.offsetTop;
+
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
